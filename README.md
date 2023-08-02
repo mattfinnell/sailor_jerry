@@ -1,9 +1,10 @@
 # Youtube Downloader
 
-`pipenv run youtube_downloader.py` 🙃
+`pipenv run python3 youtube_downloader.py` 🙃
 
-## TODO
+## Todo / Considerations
 
+- Pass youtube video in as an arg (use click??)
 - Specify an output directory
 - Cleanup video files
 - Get all videos and audio streams + codecs > sort > take best candidate
