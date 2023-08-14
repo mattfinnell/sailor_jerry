@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ffd26a7dceafc4d4c9ad8198683fa8941cf385a78140f83e0f945399b29a6013"
+            "sha256": "fc2f0449e54089dfc613aa8b6265a99fad9e580aaf403c28d9de7ca172bfbe2e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -256,12 +256,8 @@
             "version": "==0.1.10"
         },
         "pytube": {
-            "hashes": [
-                "sha256:076052efe76f390dfa24b1194ff821d4e86c17d41cb5562f3a276a8bcbfc9d1d",
-                "sha256:07b9904749e213485780d7eb606e5e5b8e4341aa4dccf699160876da00e12d78"
-            ],
-            "index": "pypi",
-            "version": "==15.0.0"
+            "git": "ssh://git@github.com/mattfinnell/pytube.git",
+            "ref": "41a35c569e7d3a750622440f647e498edd4ceb08"
         },
         "requests": {
             "hashes": [
