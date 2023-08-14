@@ -1,6 +1,6 @@
 # Sailor Jerry
 
-Download Tracks from Streaming Platforms, aka "Bootleg" hence "Sailor Jerry". Currently only works with Youtube, granted there are any age restrictions on the youtube video.
+Download Tracks from Streaming Platforms. AKA _"Bootlegging"_ hence the name "Sailor Jerry". Currently only works with Youtube if the video doesn't have any age restrictions.
 
 ## Example Usages
 
@@ -19,8 +19,6 @@ pipenv run python3 youtube_downloader.py youtube https://www.youtube.com/watch?v
 pipenv shell
 python3 youtube_downloader.py youtube https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
-
-`pipenv run python3 youtube_downloader.py`
 
 ## Todo / Considerations
 
