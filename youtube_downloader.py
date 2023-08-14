@@ -1,3 +1,5 @@
+import click
+
 from pprint import pprint
 from pytube import YouTube
 from moviepy.editor import VideoFileClip
@@ -24,44 +26,21 @@ def download_track(url):
         video_file = VideoFileClip(video_file_path)
 
         if not video_file.audio:
-            pprint(f"Stream {stream} is being a bitch")
+            pprint(f"Stream {stream} has no associated audio...")
             continue
 
         video_file.audio.write_audiofile(
             f"{youtube_video.title}.mp3"
         )
 
+@click.group()
+def cli():
+    pass
+
+@cli.command()
+@click.argument('url')
+def youtube(url: str):
+    download_track(url)
 
 if __name__ == "__main__":
-    urls = [
-        ################# BUSTED URLS ################
-        # Broken Pipe - Dude Where's My Car
-        # 'https://www.youtube.com/watch?v=G2Mbj06Ns2Y',
-
-        # Broken Pipe - Old School (Will Ferrell)
-        # 'https://www.youtube.com/watch?v=f-Ni6u5XCuQ',
-
-        # TEST CASE - Age Restricted
-        # 'https://www.youtube.com/watch?v=INNC8111kgI',
-
-        ################# WORKING URLS ################
-        # 'https://www.youtube.com/watch?v=AyiGEc6HE-w',
-        # 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        # 'https://www.youtube.com/watch?v=o3WdLtpWM_c',
-        # 'https://www.youtube.com/watch?v=UePtoxDhJSw',
-
-        # Meg tha Stallion - Yadda Yadda
-        # 'https://www.youtube.com/watch?v=7PBYGu4Az8s',
-
-        # Sia - Elastic Heart
-        # 'https://www.youtube.com/watch?v=noHygl5CGEY',
-
-        # Medasin - Wild Thoughts (Rhianna)
-        # 'https://www.youtube.com/watch?v=6muAULmNpgo',
-
-        # Flume - Highest Building
-        'https://www.youtube.com/watch?v=zU8JDmnrq2o',
-    ]
-
-    for url in urls:
-        download_track(url)
+    cli()

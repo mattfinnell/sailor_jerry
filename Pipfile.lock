@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "274f0aaa0e4d020923dcb81d10702b85d1c6e02c72ff47529d575701326c7dc5"
+            "sha256": "ffd26a7dceafc4d4c9ad8198683fa8941cf385a78140f83e0f945399b29a6013"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -105,6 +105,14 @@
             "markers": "python_full_version >= '3.7.0'",
             "version": "==3.2.0"
         },
+        "click": {
+            "hashes": [
+                "sha256:48ee849951919527a045bfe3bf7baa8a959c423134e1a5b98c05c20ba75a1cbd",
+                "sha256:fa244bb30b3b5ee2cae3da8f55c9e5e0c0e86093306301fb418eb9dc40fbded5"
+            ],
+            "index": "pypi",
+            "version": "==8.1.6"
+        },
         "decorator": {
             "hashes": [
                 "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760",
@@ -125,7 +133,7 @@
                 "sha256:4106fb395ef7f8dc0262d6aa1bb03daba818445c381ca8b7d5dfc7a2089b04df",
                 "sha256:f8436a02af02fd63f272dab50f7d623547a38f0e04a4a73e2b02ae1b8b180f27"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_version >= '3.4'",
             "version": "==2.31.1"
         },
         "imageio-ffmpeg": {
@@ -137,7 +145,7 @@
                 "sha256:dd3ef9835df91570a1cbd9e36dfbc7d228fca42dbb11636e20df75d719de2949",
                 "sha256:fdaa05ad10fe070b7fa8e5f615cb0d28f3b9b791d00af6d2a11e694158d10aa9"
             ],
-            "markers": "python_version >= '3.5'",
+            "markers": "python_version >= '3.4'",
             "version": "==0.4.8"
         },
         "moviepy": {
@@ -175,7 +183,7 @@
                 "sha256:f08f2e037bba04e707eebf4bc934f1972a315c883a9e0ebfa8a7756eabf9e357",
                 "sha256:fd608e19c8d7c55021dffd43bfe5492fab8cc105cc8986f813f8c3c048b38760"
             ],
-            "markers": "python_version >= '3.9'",
+            "markers": "python_version != '2.7'",
             "version": "==1.25.2"
         },
         "pillow": {
@@ -265,11 +273,11 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:1871fb68a86b8fb3b59ca4cdd3dcccbc7e6d613eeed31f4c332531977b89beb5",
-                "sha256:c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671"
+                "sha256:d302b3c5b53d47bce91fea46679d9c3c6508cf6332229aa1e7d8653723793386",
+                "sha256:d88e651f9db8d8551a62556d3cff9e3034274ca5d66e93197cf2490e2dcb69c7"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.65.0"
+            "version": "==4.66.1"
         },
         "urllib3": {
             "hashes": [

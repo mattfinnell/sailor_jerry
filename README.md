@@ -7,6 +7,7 @@
 - Pass youtube video in as an arg (use click??)
 - Specify an output directory
 - Cleanup video files
+- Cache Results
 - Get all videos and audio streams + codecs > sort > take best candidate
 - Get past the AgeRestrictedError
 - Parallel Batch Download
